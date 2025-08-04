@@ -21,3 +21,8 @@ func main() {
 		fmt.Println("Unknown command. Use 'help'")
 	}
 }
+
+func listTasks() {
+	data, _ := os.ReadFile("tasks.txt")
+	fmt.Println(string(data))
+}
