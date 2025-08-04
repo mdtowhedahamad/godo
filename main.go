@@ -14,6 +14,9 @@ func main() {
 	switch os.Args[1] {
 	case "help":
 		fmt.Println("Available commands: add, list, done")
+	case "add":
+		task := os.Args[2]
+		fmt.Printf("Task added: %s\n", task)
 	default:
 		fmt.Println("Unknown command. Use 'help'")
 	}
