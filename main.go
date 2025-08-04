@@ -6,6 +6,12 @@ import (
 	"os"
 )
 
+type Task struct {
+	ID    int
+	Title string
+	Done  bool
+}
+
 func main() {
 	if len(os.Args) < 2 {
 		fmt.Println("Expected 'add', 'list', or 'done' subcommands")
